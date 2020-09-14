@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="WSL (63e2d59c-ff26-4cb8-987d-377e2d4bc375)">
+  <component name="PublishConfigData" autoUpload="Always" serverName="39.98.126.40 (dfc0d0c8-78a7-416a-857e-04d415cca882)">
     <serverData>
-      <paths name="119.3.183.15 (2dd67e58-1c87-4f9e-b0ef-69211810ddf2)">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
-          </mappings>
-        </serverdata>
-      </paths>
       <paths name="39.98.126.40 (dfc0d0c8-78a7-416a-857e-04d415cca882)">
         <serverdata>
           <mappings>
-            <mapping deploy="/home/step/sort" local="$PROJECT_DIR$" />
+            <mapping deploy="sort" local="$PROJECT_DIR$" />
           </mappings>
           <excludedPaths>
             <excludedPath local="true" path="$PROJECT_DIR$/cmake-build-debug" />
@@ -20,7 +13,7 @@
           </excludedPaths>
         </serverdata>
       </paths>
-      <paths name="WSL (63e2d59c-ff26-4cb8-987d-377e2d4bc375)">
+      <paths name="WSL (e9cbad18-e9c5-48d4-9891-a59afb4d1313)">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -28,5 +21,6 @@
         </serverdata>
       </paths>
     </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
   </component>
 </project>

@@ -1,13 +1,10 @@
-//
-// Created by god on 2019/12/3.
-//
-
 #ifndef SORT_SORTTOOLS_HPP
 #define SORT_SORTTOOLS_HPP
 
 #include <array>
 #include <random>
 #include <iostream>
+#include <iomanip>
 
 class SortTools {
 public:
@@ -34,7 +31,7 @@ void SortTools::generate(std::array<int, n> &container) {
 template<size_t n>
 void SortTools::printContainer(std::array<int, n> &container) {
     for( auto &element : container){
-        std::cout << element << "\t";
+        std::cout << std::setw(4)<< element;
     }
     std::cout << std::endl;
 }
