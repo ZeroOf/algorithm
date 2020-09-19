@@ -30,7 +30,7 @@ public:
     static void QuickSort(std::array<int, n> &container, int front, int back);
 
     template<size_t n>
-    static size_t ParTition(std::array<int, n> &container, int front, int back);
+    static int ParTition(std::array<int, n> &container, int front, int back);
 };
 
 template<size_t n>
@@ -134,17 +134,17 @@ void Sort::HeapSort(int *container, size_t size) {
 }
 
 template<size_t n>
-size_t Sort::ParTition(std::array<int, n> &container, int front, int back) {
+int Sort::ParTition(std::array<int, n> &container, int front, int back) {
     int sentry = container[back];
     while (front < back) {
-        while (front < back && container[front] < sentry) {
+        while (front < back && container[front] <= sentry) {
             ++front;
         }
         container[back] = container[front];
-        while (back > front && container[back] > sentry) {
+        while (front < back && container[back] >= sentry) {
             --back;
         }
-        container[front] = container[back]
+        container[front] = container[back];
     }
     container[back] = sentry;
     return back;
@@ -152,9 +152,12 @@ size_t Sort::ParTition(std::array<int, n> &container, int front, int back) {
 
 template<size_t n>
 void Sort::QuickSort(std::array<int, n> &container, int front, int back) {
+    if (front >= back) {
+        return;
+    }
     size_t partition = ParTition(container, front, back);
-    QuickSort(container, front, partition-1);
-    QuickSort(container,partition+1, back);
+    QuickSort(container, front, partition - 1);
+    QuickSort(container, partition + 1, back);
 }
 
 

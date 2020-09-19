@@ -15,7 +15,7 @@ int main() {
     SortTools::printContainer(array);
 
 //    Sort::HeapSort(&array[0], 10);
-    Sort::QuickSort(array, 0, 10);
+    Sort::QuickSort(array, 0, 9);
     SortTools::printContainer(array);
     //mergeSort
     //Sort::MergeSort(array, 0, 9);
